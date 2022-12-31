@@ -18,8 +18,8 @@ resetbtn.addEventListener('click',reset);
 function counter(){
 	time++;
 	seconds=time%60;
-	minutes=Math.round(time/60);
-	hours=Math.round(time/3600);
+	minutes=Math.floor(time/60);
+	hours=Math.floor(time/3600);
 	sec.innerText= `${seconds}`;
 	min.innerText=`${minutes}`;
 	hr.innerText=`${hours}`;
